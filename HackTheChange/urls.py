@@ -23,42 +23,42 @@ urlpatterns = [
 
     path('users_get/', views.users_get),
     path('users_post/', views.users_post),
-    path('users_put/', views.users_put),
-    path('users_delete/', views.users_delete),
+    path('users_put/<str:pk>', views.users_put),
+    path('users_delete/<str:pk>', views.users_delete),
 
     path('tasks_get/', views.tasks_get),
     path('tasks_post/', views.tasks_post),
-    path('tasks_put/', views.tasks_put),
-    path('tasks_delete/', views.tasks_delete),
+    path('tasks_put/<str:pk>', views.tasks_put),
+    path('tasks_delete/<str:pk>', views.tasks_delete),
 
     path('goals_get/', views.goals_get),
     path('goals_post/', views.goals_post),
-    path('goals_put/', views.goals_put),
-    path('goals_delete/', views.goals_delete),
+    path('goals_put/<str:pk>', views.goals_put),
+    path('goals_delete/<str:pk>', views.goals_delete),
 
     path('userGoals_get/', views.userGoals_get),
     path('userGoals_post/', views.userGoals_post),
-    # path('userGoals_put/', views.userGoals_put),
-    # path('userGoals_delete/', views.userGoals_delete),
+    # path('userGoals_put/<str:pk>', views.userGoals_put),
+    # path('userGoals_delete/<str:pk>', views.userGoals_delete),
 
     path('login_get/', views.login_get),
     path('login_post/', views.login_post),
-    path('login_put/', views.login_put),
-    path('login_delete/', views.login_delete),
+    path('login_put/<str:pk>', views.login_put),
+    path('login_delete/<str:pk>', views.login_delete),
 
     path('friends_get/', views.friends_get),
     path('friends_post/', views.friends_post),
-    # path('friends_put/', views.friends_put),
-    # path('friends_delete/', views.friends_delete),
+    # path('friends_put/<str:pk>', views.friends_put),
+    # path('friends_delete/<str:pk>', views.friends_delete),
 
     path('challenges_get/', views.challenges_get),
     path('challenges_post/', views.challenges_post),
-    path('challenges_put/', views.challenges_put),
-    path('challenges_delete/', views.challenges_delete),
+    path('challenges_put/<str:pk>', views.challenges_put),
+    path('challenges_delete/<str:pk>', views.challenges_delete),
 
     path('challengeHistory_get/', views.challengeHistory_get),
     path('challengeHistory_post/', views.challengeHistory_post),
-    # path('challengeHistory_put/', views.challengeHistory_put),
-    # path('challengeHistory_delete/', views.challengeHistory_delete),
+    # path('challengeHistory_put/<str:pk>', views.challengeHistory_put),
+    # path('challengeHistory_delete/<str:pk>', views.challengeHistory_delete),
 
 ]
