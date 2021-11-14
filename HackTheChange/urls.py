@@ -20,13 +20,45 @@ from myapi import views
 #
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('users/', views.userList.as_view()),
-    path('tasks/', views.taskList.as_view()),
-    path('goals/', views.goalList.as_view()),
-    path('userGoals/', views.userGoalList.as_view()),
-    path('login/', views.loginList.as_view()),
-    path('friends/', views.friendList.as_view()),
-    path('challenges/', views.challengesList.as_view()),
-    path('challengeHistory/', views.challengesHistoryList.as_view()),
-    path('tasks/', views.taskList.as_view()),
+
+    path('users_get/', views.users_get.as_view()),
+    path('users_post/', views.users_post.as_view()),
+    path('users_put/', views.users_put.as_view()),
+    path('users_delete/', views.users_delete.as_view()),
+
+    path('tasks_get/', views.tasks_get.as_view()),
+    path('tasks_post/', views.tasks_post.as_view()),
+    path('tasks_put/', views.tasks_put.as_view()),
+    path('tasks_delete/', views.tasks_delete.as_view()),
+
+    path('goals_get/', views.goals_get.as_view()),
+    path('goals_post/', views.goals_post.as_view()),
+    path('goals_put/', views.goals_put.as_view()),
+    path('goals_delete/', views.goals_delete.as_view()),
+
+    path('userGoals_get/', views.userGoals_get.as_view()),
+    path('userGoals_post/', views.userGoals_post.as_view()),
+    # path('userGoals_put/', views.userGoals_put.as_view()),
+    # path('userGoals_delete/', views.userGoals_delete.as_view()),
+
+    path('login_get/', views.login_get.as_view()),
+    path('login_post/', views.login_post.as_view()),
+    path('login_put/', views.login_put.as_view()),
+    path('login_delete/', views.login_delete.as_view()),
+
+    path('friends_get/', views.friends_get.as_view()),
+    path('friends_post/', views.friends_post.as_view()),
+    # path('friends_put/', views.friends_put.as_view()),
+    # path('friends_delete/', views.friends_delete.as_view()),
+
+    path('challenges_get/', views.challenges_get.as_view()),
+    path('challenges_post/', views.challenges_post.as_view()),
+    path('challenges_put/', views.challenges_put.as_view()),
+    path('challenges_delete/', views.challenges_delete.as_view()),
+
+    path('challengeHistory_get/', views.challengeHistory_get.as_view()),
+    path('challengeHistory_post/', views.challengeHistory_post.as_view()),
+    # path('challengeHistory_put/', views.challengeHistory_put.as_view()),
+    # path('challengeHistory_delete/', views.challengeHistory_delete.as_view()),
+
 ]
