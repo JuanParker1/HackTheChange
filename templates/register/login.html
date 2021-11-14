@@ -136,11 +136,14 @@
          <form>
             <div class="field">
                <div class="fas fa-envelope"></div>
-               <input type="text" placeholder="Email or Phone">
+                <label for="username">Username</label>
+                    <input type="text" placeholder="Username" id="username" value="username">
+
             </div>
             <div class="field">
                <div class="fas fa-lock"></div>
-               <input type="password" placeholder="Password">
+                <label for="password">Password</label>
+               <input type="password" placeholder="Password" id="password" value="password">
             </div>
             <button style="background: linear-gradient(rgb(8, 90, 0),rgb(30, 255, 0))">LOGIN</button>
 			<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
@@ -159,6 +162,35 @@
 				</div>
 			  </div>
          </form>
+
+{% if form.errors %}
+<p>Your username and password didn't match. Please try again.</p>
+{% endif %}
+
+{% if next %}
+    {% if user.is_authenticated %}
+        <p>Your account doesn't have access to this page. To proceed,
+        please login with an account that has access.</p>
+    {% else %}
+        <p>Please login to see this page.</p>
+    {% endif %}
+{% endif %}
+
+<form method="post" action="{% url 'login' %}">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <td>{{ form.username.label_tag }}</td>
+            <td>{{ form.username }}</td>
+        </tr>
+        <tr>
+            <td>{{ form.password.label_tag }}</td>
+            <td>{{ form.password }}</td>
+        </tr>
+    </table>
+    <input type="submit" value="login" />
+    <input type="hidden" name="next" value="{{ next }}" />
+</form>
 
 
 	<div id="id01" class="modal">

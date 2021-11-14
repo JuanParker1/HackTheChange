@@ -14,12 +14,18 @@
 #     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 # """
 from django.contrib import admin
-from django.urls import path
+from django.conf.urls.static import static
+from django.contrib import admin
+from django.urls import path, include
+from django.conf import settings
 from rest_framework.urlpatterns import format_suffix_patterns
 from myapi import views
+from django.views.generic import RedirectView
+
 #
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('accounts/', include('django.contrib.auth.urls')),
 
     path('users_get/', views.users_get),
     path('users_post/', views.users_post),
@@ -60,4 +66,7 @@ urlpatterns = [
     path('challengeHistory_post/', views.challengeHistory_post),
     # path('challengeHistory_put/<str:pk>', views.challengeHistory_put),
     # path('challengeHistory_delete/<str:pk>', views.challengeHistory_delete),
+
 ]
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
