@@ -26,7 +26,7 @@ class tasks(models.Model):
         db_table = 'tasks'
 
     def __str__(self):
-        return self.task_id
+        return self.task_name
 
 
 class goals(models.Model):
@@ -38,7 +38,7 @@ class goals(models.Model):
         db_table = 'goals'
 
     def __str__(self):
-        return self.goal_id
+        return self.goal_name
 
 
 class userGoals(models.Model):
@@ -51,9 +51,6 @@ class userGoals(models.Model):
     class Meta:
         db_table = 'userGoals'
 
-    def __str__(self):
-        return self.goal_id
-
 
 class login(models.Model):
     username = models.AutoField(primary_key=True)
@@ -63,9 +60,6 @@ class login(models.Model):
     class Meta:
         db_table = 'login'
 
-    def __str__(self):
-        return self.username
-
 
 class friends(models.Model):
     user_id_1 = models.ForeignKey(users, on_delete=models.CASCADE)
@@ -73,9 +67,6 @@ class friends(models.Model):
 
     class Meta:
         db_table = 'friends'
-
-    def __str__(self):
-        return self.user_id_1
 
 
 class challenges(models.Model):
@@ -88,9 +79,6 @@ class challenges(models.Model):
     class Meta:
         db_table = 'challenges'
 
-    def __str__(self):
-        return self.challenge_id
-
 
 class challengeHistory(models.Model):
     challenge_id = models.ForeignKey(challenges, on_delete=models.CASCADE)
@@ -100,7 +88,4 @@ class challengeHistory(models.Model):
 
     class Meta:
         db_table = 'challengeHistory'
-
-    def __str__(self):
-        return self.challenge_id
 
