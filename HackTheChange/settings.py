@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'HackTheChange.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'HackDB',
-        'USER': 'postgres',
+        'NAME': 'dat1',
+        'USER': 'hackthechange2',
         'PASSWORD': 'password',
-        'HOST': 'localhost',
+        'HOST': 'database-2.cyjafay5ip57.us-east-2.rds.amazonaws.com',
         'PORT': '5432'
     }
 }

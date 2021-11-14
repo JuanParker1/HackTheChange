@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Friends</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="http://webthemez.com" />
+<!-- css --> 
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet"> 
+<link href="css/flexslider.css" rel="stylesheet" /> 
+<link href="css/style.css" rel="stylesheet" />
+<link rel="stylesheet" href="friends.css">
+ 
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div id="wrapper"> 
+	<!-- start header -->
+		<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><i class="icon-info-blocks material-icons">location_on</i>Keep Up</a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li><a class="waves-effect waves-dark" href="index.html">Home</a></li> 
+						 <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="waves-effect waves-dark" href="about.html">Company</a></li>
+                            <li><a class="waves-effect waves-dark" href="#">Our Team</a></li>
+                            <li><a class="waves-effect waves-dark" href="#">News</a></li> 
+                            <li><a class="waves-effect waves-dark" href="#">Investors</a></li>
+                        </ul>
+                    </li> 
+						<li><a class="waves-effect waves-dark" href="services.html">Services</a></li>
+                        <li><a class="waves-effect waves-dark" href="portfolio.html">Gallery</a></li>
+                        <li class="active"><a href="pricing.html" class="waves-effect waves-dark">Friends</a></li>
+                        <li><a class="waves-effect waves-dark" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header><!-- end header -->
+	<section id="inner-headline">
+	<div class="container">
+	
+		<div class="row">
+			<div class="col-lg-12">
+				<h2 class="pageTitle">Friends</h2>
+			</div>
+		</div>
+	</div>
+	</section>
+	<section id="content">
+<section id="pricing">
+
+     <!-- Slider -->
+     <div id="main-slider" class="flexslider">
+        <ul class="slides">
+            <li>
+            <img src="img/slides/13.jpg" alt="" />
+              </li>
+          <li>
+            <img src="img/slides/9.jpg" alt="" />
+          </li>
+          <li>
+            <img src="img/slides/12.jpg" alt="" />			
+          </li>
+          <li>
+            <img src="img/slides/3.png" alt="" />
+          </li>
+        </ul>
+    </div>
+    <!-- Slider End -->    
+
+        <div class="container">
+           <div class="row"> 
+							<div class="col-md-12">
+								<div class="about-logo">
+									<h3><span class="color">Add a Friend</span></h3>
+                                        <div id="myDIV" class="header">
+                                            <input type="text" id="myInput" placeholder="Enter valid name/email">
+                                            <button onclick="newElement()" class="addBtn">Add</button>
+                                        </div>
+								</div>  
+							</div>
+						</div>
+            <div class="row"> 
+			<div class="col-md-4 menuItem"> 
+                            <ul class="menu" id="friend-list">
+                                <li>
+                                    Ryan Reynolds
+                                    <div class="my-dropdown">
+                                        <button class="my-dropbtn">Challenge</button>
+                                        <div class="my-dropdown-content">
+                                          <a href="#">Most steps</a>
+                                          <a href="#">Most Puppies Pet</a>
+                                          <a href="#">Workout Streak</a>
+                                          <a href="#">Longest Distance Run</a>
+                                        </div>
+                                      </div>
+                                </li>
+                                <li>
+                                    Paul Rudd
+                                    <!-- <div class="detail">Paji<span class="price">$20.50</span></div> -->
+                                    <!-- <div><button class="button">Challenge</button></div> -->
+                                    <div class="my-dropdown">
+                                        <button class="my-dropbtn">Challenge</button>
+                                        <div class="my-dropdown-content">
+                                          <a href="#">Longest Guitar Session</a>
+                                          <a href="#">Longest Distance Run</a>
+                                        </div>
+                                      </div>
+                                </li>
+                                
+                            </ul>
+                            
+                        </div>
+			</div>
+            
+    
+        </div>
+    </section>
+	</section>
+	
+</div>
+<a href="#" class="scrollup waves-effect waves-dark"><i class="fa fa-angle-up active"></i></a>
+<!-- javascript
+    ================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="materialize/js/materialize.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>  
+<script src="js/jquery.flexslider.js"></script>
+<script src="js/animate.js"></script>
+<script src="keepUp.js"></script>
+<!-- Vendor Scripts -->
+<script src="js/modernizr.custom.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/animate.js"></script> 
+<script src="js/custom.js"></script>
+</body>
+</html>

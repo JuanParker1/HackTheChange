@@ -1,0 +1,22 @@
+<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                  <a class="navbar-brand" href="index.html">KEEP UP <i class="icon-info-blocks material-icons">arrow_upward</i></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+						<li><a class="waves-effect waves-dark" href="index.html"></a>>Home</a></li> 
+                        <li><a class="waves-effect waves-dark" href="profile.html"> My Profile</a></li>
+						<li class="active"><a href="#" class="waves-effect waves-dark">Friends</a></li> 
+                        <li><a class="waves-effect waves-dark" href="tracker.html">Tracker</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header><!-- end header -->

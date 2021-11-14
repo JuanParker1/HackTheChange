@@ -1,0 +1,57 @@
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="widget">
+					<h5 class="widgetheading">Our Contact</h5>
+					<address>
+					<strong>University Of Calgary</strong><br>
+					2500 University Dr NW <br>
+					T2N 1N4 Calgary AB Canada.</address>
+					<p>
+						<i class="icon-phone"></i> (403) 220-5110 <br>
+						<i class="icon-envelope-alt"></i> https://www.ucalgary.ca/
+					</p>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="widget">
+					<h5 class="widgetheading">Meet the Team</h5>
+					<ul class="link-list">
+						<li>Israa Farouk</li>
+						<li>Kameshwara Sekar</li>
+						<li>Karanveer Panesar</li>
+						<li>Muskan Sarvesh</li>
+						<li>Sarim Kamran</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="widget">
+					<h5 class="widgetheading">Developed Using</h5>
+					<ul class="link-list">
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>Bootstrap</li>
+						<li>JavaScript</li>
+						<li>Django</li>
+						<li>Python</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-sm-3">
+					<div class="widget">
+					<h5 class="widgetheading">Motivational Quotes</h5>
+					<ul class="link-list">
+						<li>Don't stop until you are proud.</li>
+						<li>Good things take time.</li>
+						<li>Dreams don't work unless you do.</li>
+						<li>Big journeys begin with small steps.</li>
+						<li>If you can dream it you can do it.</li>
+						<li>Fear kills more dreams than failure.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</footer>
